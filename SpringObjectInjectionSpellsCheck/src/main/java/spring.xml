@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+    http://www.springframework.org/schema/beans/spring-beans-4.0.xsd"> 
+    
+	<!--  by name 
+	<bean id="spellcheck" class="com.edu.SpellCheck"></bean>
+	<bean id="texteditorobj" class="com.edu.TextEditor" autowire="byName"></bean>
+	-->
+	<!--  by type-->
+	<bean id="SpellCheck" class="com.edu.Check"></bean>
+	<bean id="texteditorobj" class="com.edu.TextEditor" autowire="byType"></bean>
+	
+	 
+	 <!-- by constructor 
+    <bean id="spellobj" class="com.edu.SpellChecker"></bean>
+    <bean id="textobj" class="com.edu.TextEditor" autowire="constructor">
+   
+   </bean> -->
+    
+    </beans>
